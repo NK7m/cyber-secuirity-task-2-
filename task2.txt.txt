@@ -1,0 +1,43 @@
+PHISHING EMAIL ANALYSIS REPORT
+
+Sample Email Analyzed: "Urgent: Your Account Will Be Suspended" from "support@amaz0n-security.com"
+
+1. Sender's Email Address:
+   - Suspicious domain: "amaz0n-security.com" (misspelled Amazon with a zero)
+   - Attempts to impersonate Amazon but uses a non-official domain
+
+2. Email Headers Analysis (via mxtoolbox.com):
+   - Return-Path doesn't match From address
+   - SPF check failed
+   - Originating IP (192.168.3.45) is from a suspicious range
+
+3. Suspicious Links:
+   - Display text shows "https://amazon.com/account/verify" 
+   - Actual href links to "http://amaz0n-security-login.net/steal.php"
+   - Uses HTTP instead of HTTPS
+   - Domain doesn't match displayed text
+
+4. Urgent Language:
+   - Subject line: "URGENT: Your account will be suspended in 24 hours"
+   - Body contains multiple threats: "immediate action required", "permanent account deletion"
+
+5. Grammar and Spelling Errors:
+   - "Dear costumer" instead of "Dear customer"
+   - "You're account" instead of "Your account"
+   - Multiple run-on sentences with poor punctuation
+
+6. Request for Sensitive Information:
+   - Asks for credit card details to "verify account"
+   - Requests password confirmation
+
+7. Fake Contact Information:
+   - Provides phone number with international prefix that doesn't match Amazon's official contacts
+   - Fake physical address in the signature
+
+8. Mismatched Branding:
+   - Uses old Amazon logo
+   - Colors don't match current Amazon branding
+   - Footer links don't match Amazon's standard footer
+
+CONCLUSION:
+This email contains multiple classic phishing indicators including domain spoofing, deceptive links, urgent language, grammatical errors, and requests for sensitive information. It should be reported as phishing and deleted immediately.
